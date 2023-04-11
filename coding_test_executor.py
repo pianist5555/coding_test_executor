@@ -4,9 +4,9 @@ from typing import List, Callable
 def execute_test(solution: Callable, params: List):
     is_right = []
     for param in params:
-        input = param[0]
-        output = param[1]
-        answer = solution(param)
+        input = param[0:-1]
+        output = param[-1]
+        answer = solution(*input)
         if answer == output:
             is_right.append(f'   입력값 〉 {input}\n    기댓값 〉 {output}\n 실행 결과 〉 \033[34m테스트를 통과하였습니다.\033[0m')
         else:

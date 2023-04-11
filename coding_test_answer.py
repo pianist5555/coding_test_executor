@@ -1,13 +1,13 @@
 from coding_test_executor import execute_test
 
+# 마지막 튜플 = output
 params = [
-    ([1,2,3,3,3,4], 3),
-    ([1,1,2,2], -1),
-    ([1], 1)
+    (7,10, 2),
+    (4,12, 3)
 ]
 
-def solution(arg):
-    answer = 1
-    return answer
+def solution(slice, n):
+    result = 2
+    return result
 
 execute_test(solution, params)
